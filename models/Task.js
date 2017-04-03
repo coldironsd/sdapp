@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/gnb_app');
+mongoose.connect('mongodb://localhost/sdapp');
 
 var schema = new mongoose.Schema({
 
