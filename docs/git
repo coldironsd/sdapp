@@ -1,0 +1,17 @@
+-- If referential integrity has been broken:
+git config --get remote.origin.url
+
+-- If referential integrity is intact:
+git remote show origin
+
+-- Commit all in single command.
+git add -A && git commit -m "Your Message"
+
+git pull fetch --all
+git push --force --all
+
+** YOU MAY LOST LOCAL CHANGES, USE WITH CAUTION **
+git reset --hard origin/master
+OR If you are on some other branch:
+
+git reset --hard origin/<branch_name>
