@@ -1,0 +1,40 @@
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" href="../../favicon.ico">
+      <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    </head>
+    <body data-spy="scroll" data-target=".scrollspy">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </body>
+  </html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/foundation.css">
+    <link rel="stylesheet" href="/stylesheets/foundation-datepicker.min.css">
+    <link rel="stylesheet" href="/stylesheets/foundation-card-info.css">
+    <script type="text/javascript" src="/javascripts/vendor/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/vendor/what-input.js"></script>
+    <script type="text/javascript" src="/javascripts/vendor/foundation.min.js"></script>
+    <script type="text/javascript" src="/javascripts/foundation-datepicker.min.js"></script>
+    <script type="text/javascript" src="/javascripts/vendor/form-validator/jquery.form-validator.min.js"></script>
+    <script type="text/javascript" src="/javascripts/app.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZFg3w1n5rq9QuA4KkdIVi9cvJT5Z5E4&amp;libraries=places"></script>
+    <script type="text/javascript" src="/javascripts/custom.js"> </script>
+    <nav class="hover-underline-menu" data-menu-underline-from-center>
+      <ul class="menu align-center">
+        <li><a href="/tobuy">Add</a></li>
+        <li><a href="/inittakejob">Take</a></li>
+        <li><a href="/myrequest">My Request</a></li>
+        <li><a href="/login">Sign In</a></li>
+        <li><a href="/logout">Sign out</a></li>
+      </ul>
+    </nav>
+    <hr style="margin:0em;padding:0em;width: 100%;">

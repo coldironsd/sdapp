@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/foundation.css')
+    link(rel='stylesheet', href="/stylesheets/foundation-datepicker.min.css")
+    link(rel='stylesheet', href="/stylesheets/foundation-card-info.css")
+    
+    script(type='text/javascript' src='/javascripts/vendor/jquery.js')
+    script(type='text/javascript' src='/javascripts/vendor/what-input.js')
+    script(type='text/javascript' src='/javascripts/vendor/foundation.min.js')
+    script(type='text/javascript' src='/javascripts/foundation-datepicker.min.js')
+    script(type='text/javascript' src='/javascripts/vendor/form-validator/jquery.form-validator.min.js')
+    script(type='text/javascript' src='/javascripts/app.js')
+    script(type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZFg3w1n5rq9QuA4KkdIVi9cvJT5Z5E4&libraries=places')
+    script(type='text/javascript' src='/javascripts/custom.js')
+    
+    div.top-bar(style="background-color: white;")
+      div.top-bar-left(style="background-color: white;")
+        ul.menu.dropdown(data-dropdown-menu style="background-color: white;")
+          li.menu-text(style="padding-bottom: 0px;padding-top: 0px;")
+            em(style="font-size:2em;") SocDel
+      div.top-bar-right(style="background-color: white;")      
+        ul.menu(style="background-color: white;")
+          li
+            a(href="/index") Index
+          li
+            a(href="/tobuy") Add
+          li
+            a(href="/inittakejob") Take
+          li
+            a(href="/myjob") My Request
+          li
+            a(href="/login") Sign in
+          li
+            a(href="/logout") Sign out
+    
+    // hr(style="margin:0em;padding:0em;width: 100%;")
+  body
+    
+    block content

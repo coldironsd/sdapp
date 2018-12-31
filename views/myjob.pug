@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  script
+      | console.log("TESTING: " + user)
+  p
+  form(method='POST' action='/searchSubmit/')
+    div.grid-x.grid-padding-x
+      div.cell.small-3
+      div.cell.small-6(style='width: 50%')
+        div.input-group
+          input.input-group-field(type='text' id='search' placeholder='Look up' name='search' data-validation-length="min5"   data-validation="length alphanumeric required" data-validation-error-msg="The input has to contain at least 5 characters")
+          div.input-group-button
+            button.button(type='submit') Search
+  form(method='POST' action='/submitTodeliver/')
+    div.grid-x.grid-padding-x.small-up-2.medium-up-4
+      each val in jobs
+        div.cell
+          div.card-info.primary
+            // div.card-info-label
+            //   div.card-info-label-text New
+                
+            div.card-info-content
+              h3.lead=val.title
+                // a.float-right.button(href='/removejob?id=' + val._id) X
+              p=val.description
+              p="Date:" + val.time
+              a.float-right.button(href='/removejob?id=' + val._id) Cancel
+              

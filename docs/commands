@@ -1,0 +1,11 @@
+ npm cache clean -f
+ sudo npm install -g n
+ sudo n stable
+ node --version
+ node app.js
+ 
+ nvm install stable
+ 
+ sudo rm /data/db/mongod.lock
+sudo mongod --dbpath /data/db --repair
+sudo mongod --dbpath /data/db

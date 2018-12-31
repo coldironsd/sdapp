@@ -1,0 +1,11 @@
+Authorized redirect URIs
+For use with requests from a web server. This is the path in your application that users are redirected to after they have authenticated with Google. The path will be appended with the authorization code for access. Must have a protocol. Cannot contain URL fragments or relative paths. Cannot be a public IP address.
+
+https://node-app-socdel.c9users.io	
+https://node-app-socdel.c9users.io:3000/auth/google/callback	
+https://node-app-socdel.c9users.io:3000	
+https://node-app-socdel.c9users.io/auth/google/callback	
+https://node-app-socdel.c9users.io:3000/google/callback	
+https://node-app-socdel.c9users.io/google/callback	 
+https://www.example.com
+ 

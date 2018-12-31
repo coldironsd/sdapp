@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  header.marketing-hero.without-subnav.text-center(style="background-color: #E9EBEE;height: 500px;")
+    div.row.column
+      div.grid-x
+        div.cell.small-6(style="padding:1em;")
+          h3.hero-main-header() Peer to Peer Delivery 
+        div.cell.small-6(style="padding:1em;")
+          form(method='POST' action='/login' id="form")
+            input(type="hidden" value="uid" name=uid)
+            div.grid-container
+              div.grid-x.align-center
+                div.cell.grid-y(style='width: 60%')
+                  div.cell.grid-x.grid-padding-x
+                    div.small-4.large-4
+                      label(for='') To Buy
+                      input(type="radio" name="jobType" value="1" checked="checked" )
+                    div.small-4.large-4
+                      label(for='') To Deliver
+                      input(type="radio" name="jobType" value="0")
+                  div.cell.grid-y(style='width: 100%')
+                    div.columns.small-4.large-4
+                      input(type='text' id='what' placeholder='what' name='what' data-validation-length="min5"   data-validation="length alphanumeric required" data-validation-error-msg="The input has to contain at least 5 characters")
+                    div.columns.small-4.large-4
+                      input(type='text' id='whendate' placeholder='when' name='whendate'  data-validation-error-msg="The input date cannot be empty")
+                    div.columns.small-4.large-4
+                      input(type='text' id='pac-fromwhere' placeholder='from where' name='fromwhere' data-validation="required" data-validation-error-msg="From where cannot be empty")
+                    div.columns.small-4.large-4
+                      input(type='text' id='pac-towhere' placeholder='to where' name='towhere' data-validation="required" data-validation-error-msg="To where cannot be empty")
+                    div.input-group.columns.small-4.large-4
+                      span.input-group-label $
+                      input.input-group-field(type='number' id='cost' placeholder='cost' name='cost' data-validation="number required" data-validation-error-msg="Cannot be empty")
+                    button.button(type='submit') Next
+            
+  div.row.large-10.columns.text-center
+    p Introduction - short description
+  div.row.column    
+    hr.dotted

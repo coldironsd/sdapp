@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  header.marketing-hero.without-subnav.text-center(style="background-color: #E9EBEE;height: 500px;")
+    div.row.column
+      div.grid-x
+        div.cell.small-6(style="padding:1em;")
+          h3.hero-main-header() Peer to Peer Delivery 
+        div.cell.small-6(style="padding:1em;")
+            div.grid-container
+              h5 Register
+              div.grid-x.align-center
+                div.cell.grid-y(style='width: 60%')
+                  div.card-image  
+                    div.input-group
+                      a.button.alert(href='/auth/google') Google
+                    div.input-group
+                      a.button(href='/auth/facebook') Facebook            
+  div.row.large-10.columns.text-center
+    p Introduction - short description
+  div.row.column    
+    hr.dotted

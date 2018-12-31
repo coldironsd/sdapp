@@ -1,18 +1,30 @@
 {
-  "name": "workspace",
-  "version": "0.0.0",
+  "name": "sdapp",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "~1.16.0",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.3",
-    "debug": "~2.6.0",
-    "express": "~4.14.1",
-    "jade": "~1.11.0",
-    "mongoose": "^4.9.2",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "find-or-create": "^1.1.0",
+    "foundation-datepicker": "^1.5.6",
+    "http-errors": "~1.6.2",
+    "jade": "^1.11.0",
+    "jquery": "^3.3.1",
+    "jquery-form-validator": "^2.3.79",
+    "mongoose": "^5.3.12",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth": "^1.0.0",
+    "pug": "^2.0.3",
+    "pug-bootstrap": "0.0.15",
+    "remove-use-strict": "0.0.5"
   }
 }
